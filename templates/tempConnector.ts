@@ -12,6 +12,10 @@ const tempConnector: tempConnectorInterface = {
       title: "About",
       file: "02-template.md",
     },
+    {
+      title: "Acknowledgements",
+      file: "03-template.md",
+    },
   ],
 };
 
