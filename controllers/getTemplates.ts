@@ -9,6 +9,7 @@ export const getTemplates = (req: Request, res: Response) => {
     return {
       title: template.title,
       fileData: fs.readFileSync("./templates/" + template.file, "utf-8"),
+      fileName: template.file,
     };
   });
 
