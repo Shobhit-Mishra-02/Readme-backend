@@ -1,15 +1,17 @@
-# Express starter template with typescript
+# Backend for the Readme gen project
 
-This is just simple express starter template with typescript support and testing is done with jest and supertest. To get the express starter template with es6 support then select **es6** branch.
+This the backend of the Readme gen project and this rest API serves the build in templates to to the client side, [click here](https://github.com/Shobhit-Mishra-02/Readme-gen) to visite client side repo.
+
+> here is [demo](https://distinct-stole-fly.cyclic.app/)
+
+## Prerequisites
+
+- typescript
+- express
 
 ## Quick start
 
 - Clone the repository.
-
-```shell
-git clone git@github.com:Shobhit-Mishra-02/express.git
-cd express-ts
-```
 
 - Install all the dependencies.
 
@@ -23,7 +25,7 @@ npm install
 npx ts-jest config:init
 ```
 
-- That's it you are ready to rock !!
+- That's it the app is ready to start.
 
 ## Start express app
 
@@ -36,3 +38,7 @@ npm run start
 ```
 npm run test
 ```
+
+## Contributions are most welcome
+
+If you think that you can even contribute a little then believe me just do it.
