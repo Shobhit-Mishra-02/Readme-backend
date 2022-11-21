@@ -1,6 +1,7 @@
 import request from "supertest";
 import app from "../app";
 import tempConnector from "../templates/tempConnector";
+import fs from "fs";
 
 describe("Test for health", () => {
   test("GET /healthCheck", async () => {
@@ -38,5 +39,22 @@ describe("Testing templates data", () => {
     });
 
     expect(tempNamesArrayFromAPI).toEqual(tempNamesArray);
+  });
+
+  test("Test for the templates content: GET /", async () => {
+    const res = await request(app).get("/");
+    const tempContentFromAPI = [];
+    const tempContent = [];
+
+    res.body.forEach((temp) => {
+      tempContentFromAPI.push(temp.fileData);
+    });
+
+    tempConnector.allTemplate.forEach((temp) => {
+      const document = fs.readFileSync("./templates/" + temp.file, "utf-8");
+      tempContent.push(document);
+    });
+
+    expect(tempContentFromAPI).toEqual(tempContent);
   });
 });
