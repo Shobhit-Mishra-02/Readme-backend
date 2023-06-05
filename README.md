@@ -6,7 +6,7 @@ This the backend of the Readme gen project and this rest API serves the build in
 
 ## Prerequisites
 
-- typescript
+- javascript
 - express
 
 ## Quick start
@@ -19,12 +19,6 @@ This the backend of the Readme gen project and this rest API serves the build in
 npm install
 ```
 
-- Run this command to create jest.config.js file
-
-```shell
-npx ts-jest config:init
-```
-
 - That's it the app is ready to start.
 
 ## Start express app
@@ -33,9 +27,15 @@ npx ts-jest config:init
 npm run start
 ```
 
+## Start express app in dev mode
+
+```shell
+npm run dev
+```
+
 ## Running test
 
-```
+```shell
 npm run test
 ```
 
